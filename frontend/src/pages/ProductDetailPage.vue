@@ -56,7 +56,7 @@ export default {
       const email = prompt('Please enter your email to sign in:');
       const auth = getAuth();
       const actionCodeSettings = {
-        url: `https://olive-site.onrender.com/products/${this.$route.params.productId}`,
+        url: `https://olivesite.onrender.com/products/${this.$route.params.productId}`,
         handleCodeInApp: true,
       }
       await sendSignInLinkToEmail(auth, email, actionCodeSettings);
